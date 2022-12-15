@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: 'Oswald', sans-serif;
+  text-align: justify;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #20202A;
+  background-size: 100%;
+}
+
+.light-bg {
+  position: relative;
+  background-color: #DEDEEA;
+}
+
+.dark-bg {
+  position: relative;
+  background-color: #20202A;
+  z-index: -1;
+  -webkit-box-shadow: inset 0px 30px 30px -12px #0f0f0f, inset 0px 18px 36px -18px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 30px 30px -12px #0f0f0f, inset 0px 18px 36px -18px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  position: relative;
+  background: repeating-linear-gradient(to right, #5A2790 0%, #AB3585 50%, #5A2790 100%);
+  background-size: 500% auto;
+  background-position: 0 0%;
+  font-size: 4rem;
+  color: #61617B;
+  font-weight: 600;
+  margin: 0 49% 0 8%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-animation: gradient 15s infinite;
+          animation: gradient 15s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  z-index: 3;
+}
+
+.gradient-blur {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  z-index: 2;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  display: none;
+}
+
+p {
+  text-align: justify;
+  margin: 0 10% 0 10%;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
